@@ -145,6 +145,7 @@ public class WebSocketTransport {
 
       switch messageType {
       case .data,
+           .next,
            .error:
         if let id = parseHandler.id, let responseHandler = subscribers[id] {
           if let payload = parseHandler.payload {
@@ -185,6 +186,7 @@ public class WebSocketTransport {
 
       case .connectionInit,
            .connectionTerminate,
+           .subscribe,
            .start,
            .stop,
            .connectionError:

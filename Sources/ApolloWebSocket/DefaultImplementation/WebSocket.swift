@@ -75,7 +75,7 @@ public final class WebSocket: NSObject, WebSocketClient, StreamDelegate, WebSock
     static let headerWSConnectionName  = "Connection"
     static let headerWSConnectionValue = "Upgrade"
     static let headerWSProtocolName    = "Sec-WebSocket-Protocol"
-    static let headerWSProtocolValue   = "graphql-ws"
+    static let headerWSProtocolValue   = "graphql-transport-ws"
     static let headerWSVersionName     = "Sec-WebSocket-Version"
     static let headerWSVersionValue    = "13"
     static let headerWSExtensionName   = "Sec-WebSocket-Extensions"

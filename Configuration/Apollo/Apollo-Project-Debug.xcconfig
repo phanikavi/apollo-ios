@@ -1,1 +1,2 @@
 #include "../Shared/Project-Debug.xcconfig"
+SDKROOT = iphoneos
